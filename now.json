@@ -1,0 +1,8 @@
+{
+    
+    "name": "async-app",
+    "builds": [{ "src": "async-app/package.json", "use": "@now/static-build", "config": {"distDir": "build"} }],
+    "routes": [
+        { "src": "/(.*)", "dest": "async-app/$1" }
+    ]
+}
